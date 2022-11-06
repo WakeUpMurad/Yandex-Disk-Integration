@@ -1,1 +1,1 @@
-# Yandex-Disk-Integration
+# yandex-disk-integration
