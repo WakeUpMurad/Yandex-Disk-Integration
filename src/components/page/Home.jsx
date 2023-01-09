@@ -36,7 +36,7 @@ const Home = () => {
 
     return (
         <div>
-
+            Yandex
         </div>
     );
 };
