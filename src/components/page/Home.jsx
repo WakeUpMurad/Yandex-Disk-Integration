@@ -13,7 +13,6 @@ const Home = () => {
         "Content-Type": "application/json; charset=utf-8"
     }
 
-
     useEffect(() => {
         axios.get('https://oauth.yandex.ru/authorize?response_type=token&client_id=0667250329664e899fd9cf81f4069835')
             .then(() => {
