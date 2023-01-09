@@ -1,19 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
-import {Route, Routes} from "react-router";
-import Home from "./components/page/Home";
 
 function App() {
-  const [courses, setCoursesData] = useState();
+const [token, setToken] = useState('');
+const [resp, setResp] = useState();
 
+let url = 'https://rest-api.display.yandex.net/rest/v0.2/currencies.json';
+let clientLogin = '0667250329664e899fd9cf81f4069835';
+let headers = {
+    "Authorization": `Bearer ${token}`,
+    "Accept-Language": "ru",
+    "Content-Type": "application/json; charset=utf-8"
+}
+useEffect(() => {
+    axios.get('https://oauth.yandex.ru/authorize?response_type=token&client_id=0667250329664e899fd9cf81f4069835')
+        .then(() => {
+            let tok = /access_token=([^&]+)/.exec(document.location.hash)[1];
+            setToken(tok);
+        })
+        .catch(err => {
+            console.log(err)
 
+        })
+},[])
+
+useEffect(() => {
+    axios.get(`${url}`, {...headers})
+        .then( r => setResp(r.data))
+        .catch(err => {
+            console.log(err);
+            alert('Ошибка при загрузке курса валют')
+        })
+},[token])
 
   return (
-      <Routes>
-          <Route path={'/'} element={<Home />}/>
-      </Routes>
+      <div>
+          Yandex
+      </div>
   );
 }
 
