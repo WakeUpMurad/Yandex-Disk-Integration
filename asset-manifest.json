@@ -1,16 +1,15 @@
 {
   "files": {
     "main.css": "/yandex-disk-integration/static/css/main.073c9b0a.css",
-    "main.js": "/yandex-disk-integration/static/js/main.073395a2.js",
+    "main.js": "/yandex-disk-integration/static/js/main.c8fe15a0.js",
     "static/js/787.f6ea86f1.chunk.js": "/yandex-disk-integration/static/js/787.f6ea86f1.chunk.js",
-    "static/media/logo.svg": "/yandex-disk-integration/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/yandex-disk-integration/index.html",
     "main.073c9b0a.css.map": "/yandex-disk-integration/static/css/main.073c9b0a.css.map",
-    "main.073395a2.js.map": "/yandex-disk-integration/static/js/main.073395a2.js.map",
+    "main.c8fe15a0.js.map": "/yandex-disk-integration/static/js/main.c8fe15a0.js.map",
     "787.f6ea86f1.chunk.js.map": "/yandex-disk-integration/static/js/787.f6ea86f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.073395a2.js"
+    "static/js/main.c8fe15a0.js"
   ]
 }
